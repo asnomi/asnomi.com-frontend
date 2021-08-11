@@ -1,4 +1,13 @@
 # asnomi.com contents repos
+## Whats repositry?
+
+あすのみの[Webサイト](https://asnomi.com)のフロントエンド部分を管理してるリポジトリ。  
+インフラ側は別リポジトリで管理(予定)
+
+## Architecture
+
+単純構成  
+![](./architecture.jpg)
 
 ## Operation manual
 ### Directorys and Files
@@ -30,6 +39,7 @@
 + よしなに画像コンテンツを作成して```docroot/img/```以下に配置
 
 ### Deployment
+
 以下スクリプトを実行
 
 ```bash
@@ -45,5 +55,6 @@
 S3のクリーンアップとキャッシュ削除は必要な場合にコメントアウトを外して有効化する。
 
 ## Require Tools
+
 + AWS CLI
 + Pug(Jade)
