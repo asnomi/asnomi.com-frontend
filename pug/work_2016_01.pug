@@ -1,0 +1,62 @@
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- local var
+- var title = "Dropout After";
+- var ogpurl = "https://s3-ap-northeast-1.amazonaws.com/asnomi.com/img/jacket/dropout_after.jpg";
+
+//- global var
+include ./include/var.pug
+
+//- header
+include ./include/head.pug
+
+body#fadein
+
+  //- nav
+  include ./include/nav.pug
+
+  div.container-fluid
+    div.row.align-items-center.text-center
+      div.col-xs-6.col-lg-6.text-center
+        a(href=ogpurl data-fancybox data-caption="jacket")
+          img(src=ogpurl alt="jacket" width="800").img-fluid
+
+      div.col-xs-6.col-lg-6
+        h2 #{title}
+        p ほんの少しだけ未来、世界の4割は廃墟になりました。
+        | 初のオリジナルフルカラーイラスト本。
+
+    div.row.row-configure.align-items-center.text-center.work_common
+      div.col-xs-12.col-lg-12.row-0
+        hr
+        h3 サンプル
+        a(href="../were/tia_sample_2.jpg")
+          img(src="../were/tia_sample_2.jpg" alt="1"  width="80")
+        a(href="../were/tia_sample_3.jpg")
+          img(src="../were/tia_sample_3.jpg" alt="2"  width="80")
+        a(href="../were/tia_sample_4.jpg")
+          img(src="../were/tia_sample_4.jpg" alt="3"  width="80")
+        hr
+
+      div.col-xs-6.col-lg-6.row-0
+        h3 頒布情報
+        h5 2019/10/2 Release
+        a(href=comitiaurl target="_blank") コミティア116にて頒布
+        p B5フルカラー、16p、500円
+
+      div.col-xs-6.col-lg-6.row-0
+        h3 販売情報
+        a(href="https://icenomi.booth.pm/items/557886" target="_blank") Booth  
+
+      div.col-xs-12.col-lg-12.row-0
+        hr
+        h3 関連記事 
+        a(href="work_2017_04.html") Dropout Reload
+
+  //- footer
+  include ./include/footer.pug
+

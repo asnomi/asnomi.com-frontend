@@ -1,0 +1,132 @@
+//- --------------------------------------------------------------------------------------
+//- index
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ./include/var.pug
+
+//- local var
+- var title = "asnomi studio";
+- var ogpurl = "https://s3-ap-northeast-1.amazonaws.com/asnomi.com/img/ogp.jpg";
+
+//- functions
+//- topnews and news
+  - arg 0: TopComment
+  - arg 1: Date
+  - arg 2: image url
+  - arg 3: image url over link(sample page)
+  - arg 4: product link
+  - arg 5: subComment
+mixin topnews(items)
+  li.list-group-item.list-group-item-action.flex-column.align-items-start.bg-transparent
+    div.d-flex.justify-content-between
+      h5.mt-10.mb-1.text-dark 
+        div.badge.badge-primary
+          span New
+        | #{items[0]}
+      small #{items[1]}
+    a(href=items[2] target="_blank")
+      img(src=items[3] alt="jacket" width="300px").img-fluid
+    p.mt-1.mb-1
+      small
+        a(href=items[4]) #{items[5]}
+
+mixin news(items)
+  li.list-group-item.list-group-item-action.flex-column.align-items-start.bg-transparent
+    div.d-flex.justify-content-between
+      h5.mt-10.mb-1.text-dark #{items[0]}
+      small #{items[1]}
+    a(href=items[2] target="_blank")
+      img(src=items[3] alt="jacket" width="300px").img-fluid
+    p.mt-1.mb-1
+      small
+        a(href=items[4]) #{items[5]}
+
+//- index_card and index_card_new
+  - arg 0: Date
+  - arg 1: Title
+  - arg 2: Comment
+  - arg 3: Product link
+  - arg 4: Shop link
+  - arg 5: Image URL
+//- mixin index_card(items)
+//-   div.brack.column
+//-     div.ui.card
+//-       div.image
+//-         img(src=items[5])
+//-       div.content
+//-         p.header
+//-           #{items[1]}
+//-         div.meta
+//-           span.date
+//-             #{items[2]}
+//-         div.description
+//-           #{items[3]}
+//-       div.example.content
+//-         ui.blue.labels
+//-           a.ui.label 詳しく
+
+mixin index_card(items)
+  div.column
+    div.segment
+      img(src=items[4]).ui.bordered.fluid.image
+  div.column
+    div.ui.items
+      div.item
+        div.content
+          div.header
+            span #{items[1]}
+          div.meta
+            span #{items[0]}
+          div.description
+            span #{items[2]}
+          div.extra
+            ui.green.labels
+              a(href=items[3]).ui.label 詳細
+    div.ui.divider
+
+//- --------------------------------------------------------------------------------------
+
+//- header
+include ./include/head.pug
+body#fadein
+  div
+    div.entrance_top
+      div.ui.vertical.masthead.center.aligned.segment
+        div.ui.container
+          //- nav
+          include ./include/nav.pug
+        div.ui.text.container
+          div.toptitle
+          h1.ui.header asnomi studio
+          div.tailtitle
+    div.ui.two.column.stackable.grid
+      div.middle.aligned.two.column.row
+        +index_card(['2021/4/3', '新譜リリース&サイトリニューアル', 'あすのみ初の再録フルアルバムが配信発売開始です。ついでにホームページをレスポンシブ対応しました。', './contents/work_2021_01.html', 'img/entrance/entrance_rerec1.jpg'])
+        +index_card(['2020/11/06', 'ポートフォリオサイト リニューアル', 'ホームページがリニューアルオープンしました。', './biography.html', 'img/entrance/entrance_new.jpg'])
+        +index_card(['2020/8/30', '新曲「夏空」SoundCloudで配信中', 'シーズン3プロジェクト', 'https://soundcloud.com/xm_igr/natsuzora', 'img/entrance/entrance_s3-natsuzora.jpg'])
+        +index_card(['2020/7/19', '新曲「雨の日の歌」SoundCloudで配信中', 'シーズン3プロジェクト', 'https://soundcloud.com/xm_igr/rainydaysong', 'img/entrance/entrance_s3-ameno.jpg'])
+        +index_card(['2020/7/12', '淡彩色のワンダーランド Remastered ストリーミング配信開始', '2017年に頒布した「淡彩色のワンダーランド」がリマスターされて帰ってきました。Apple Musicなどでストリーミング配信中。', './contents/work_2020_02.html', 'img/entrance/entrance_wonderland_remaster.jpg'])
+        +index_card(['2020/4/10', 'モノトーンランドスケープ Streaming Edit ストリーミング配信開始', '「モノトーンランドスケープ EP」がApple Musicなどで配信されてます。Conca版と同じ仕様。', './contents/work_2020_01.html', 'img/entrance/entrance_monotonelandscape.jpg'])
+  
+    //- footer
+    div.ui.inverted.vertical.footer.segment
+      div.ui.container
+        div.ui.stackable.inverted.divided.equal.height.stackable.grid
+          div.center.aligned.column
+            img(src="./img/photo01.jpg" width="150px")#icon_profile
+            div.content
+              h1 あすのみ asnomi
+              h4 淡く繊細な終末世界を描く、作曲する絵描き。
+              a(href="./biography.html") 詳しく
+              br
+              a(href="./discography.html") 過去作品
+      div.ui.container
+        div.column
+          include ./include/footer.pug

@@ -1,0 +1,134 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ./include/var.pug
+
+//- local var
+- var title = 'ReRec Collection I アワイロノガラクタ';
+- var ogpurl = 'https://s3-ap-northeast-1.amazonaws.com/dev.asnomi.com/img/jacket/rerec_collection_1.jpg';
+- var mainimage = 'https://s3-ap-northeast-1.amazonaws.com/dev.asnomi.com/img/jacket/rerec_collection_1.jpg';
+- var releasedate = '2021/4/3 Release';
+- var event = '#';
+- var eventtext = 'イベント頒布なし';
+- var specification = 'ituensやspotifyなど各社でストリーミング配信（規格や値段は配信サイトによる）';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ./include/head.pug
+body#fadein
+  div.entrance_top
+    div.ui.vertical.masthead.center.aligned.segment
+      div.ui.container
+        //- nav
+        include ./include/nav.pug
+
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span asnomi studio(あすのみ)自分自身が昔作ったインスト曲を再解釈、セルフアレンジして再録したアルバムです。
+                |  縦横無尽なメロディライン、極彩色のギターサウンド、息継ぎさせない高速リズム隊をご賞味ください。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span TrackList
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. DrawnWorld (2021 ver)
+                      div.description from ミッドナイトアンダー 2014
+                  div.item
+                    div.content
+                      div.header 2. ヒステリックラストダンス (2021 ver)
+                      div.description from ミッドナイトアンダー 2014
+                  div.item
+                    div.content
+                      div.header 3. ミッドナイトアンダー (2021 ver)
+                      div.description from ミッドナイトアンダー 2014
+                  div.item
+                    div.content
+                      div.header 4. grasp (2021 ver) 
+                      div.description from Grasp The Worlds End 2015
+                  div.item
+                    div.content
+                      div.header 5. ラストナンバー (2021 ver) 
+                      div.description from Grasp The Worlds End 2015
+                  div.item
+                    div.content
+                      div.header 6. ガラクタ (2021 ver)
+                      div.description from ふたりぼっちの夜に 2015
+                  div.item
+                    div.content
+                      div.header 7. 海が割れた日 (2021 ver)
+                      div.description from ふたりぼっちの夜に 2015
+                  div.item
+                    div.content
+                      div.header 8. RE (2021 ver)  
+                      div.description from ふたりぼっちの夜に 2015
+                  div.item
+                    div.content
+                      div.header 9. 暴力的直球姉妹 (2021 ver)
+                      div.description from 2015 Released on soundcloud
+                  div.item
+                    div.content
+                      div.header 10. CatchyLandscape (2021 ver)
+                      div.description from Catchy LandScape 2016
+                  div.item
+                    div.content
+                      div.header 11. ヒトリノワールド (2021 ver)
+                      div.description from Catchy LandScape 2016
+                  div.item
+                    div.content
+                      div.header 12. ナツノオワリ、アメノオト (2021 ver)
+                      div.description from 2016 Released on soundcloud
+        div.ui.divider
+      div.column
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 配信サイトによります。ストリーミング配信サイトの場合は無料です。
+                h5 配信形式
+                p mp3/wav ※配信サイトによります。
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://linkco.re/SUysR3cV") 配信先
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+  //- footer
+  div.ui.inverted.vertical.footer.segment
+    div.ui.container
+      div.column
+        include ./include/footer.pug
+
