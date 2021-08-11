@@ -123,9 +123,10 @@ hr {
 
 /* contents backgroud*/
 .entrance_top {
-  background-image: url("../img/bg_top.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -160,8 +161,23 @@ hr {
 }
 
 .toptitle {
-  padding-top: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
+
 .tailtitle {
   padding-top: 20vh;
 }

@@ -97,15 +97,8 @@ mixin index_card(items)
 include ./include/head.pug
 body#fadein
   div
-    div.entrance_top
-      div.ui.vertical.masthead.center.aligned.segment
-        div.ui.container
-          //- nav
-          include ./include/nav.pug
-        div.ui.text.container
-          div.toptitle
-          h1.ui.header asnomi studio
-          div.tailtitle
+    div.entrance_top.toptitle
+      h1.ui.header asnomi studio
     div.ui.two.column.stackable.grid
       div.middle.aligned.two.column.row
         +index_card(['2021/4/3', '新譜リリース&サイトリニューアル', 'あすのみ初の再録フルアルバムが配信発売開始です。ついでにホームページをレスポンシブ対応しました。', './contents/work_2021_01.html', 'img/entrance/entrance_rerec1.jpg'])
@@ -120,13 +113,27 @@ body#fadein
       div.ui.container
         div.ui.stackable.inverted.divided.equal.height.stackable.grid
           div.center.aligned.column
-            img(src="./img/photo01.jpg" width="150px")#icon_profile
-            div.content
-              h1 あすのみ asnomi
-              h4 淡く繊細な終末世界を描く、作曲する絵描き。
-              a(href="./biography.html") 詳しく
-              br
-              a(href="./discography.html") 過去作品
+            h2.ui.header
+              img(src="./favicon.ico" alt="favicon" width="30px")
+              div.content あすのみ asnomi
+            div.ui.content
+              div.description 淡く繊細な終末世界を描く、作曲する絵描き。
+                p ふわふわした淡いキャラクター・涼し気な孤独感を身に纏うイラストと情景豊かな楽曲による唯一無二のグルーブ感を演出します。
+                a(href="../discography.html").item Discography
+                p 依頼はメールか各SNSから
+            div.ui.relaxed.divided.list
+              div.item
+                a(href="http://twitter.com/xm_igra3" target="_blank") Twitter
+              div.item
+                a(href="https://note.com/asnomi" target="_blank") Note
+              div.item
+                a(href="https://www.pixiv.net/users/1591078" target="_blank") Pixiv
+              div.item
+                a(href="https://soundcloud.com/xm_igr" target="_blank") SoundCloud
+              div.item
+                a(href="https://www.youtube.com/channel/UCdLmvCWCcVCvQcjZ9hBX5VQ" target="_blank") Youtube
+              div.item
+                a(href="https://xm-igr.tumblr.com/" target="_blank") Tumblr
       div.ui.container
-        div.column
-          include ./include/footer.pug
+        //- nav
+        include ./include/footer.pug
