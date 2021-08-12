@@ -97,8 +97,10 @@ mixin index_card(items)
 include ./include/head.pug
 body#fadein
   div
+
     div.entrance_top.toptitle
       h1.ui.header asnomi studio
+
     div.ui.two.column.stackable.grid
       div.middle.aligned.two.column.row
         +index_card(['2021/4/3', '新譜リリース&サイトリニューアル', 'あすのみ初の再録フルアルバムが配信発売開始です。ついでにホームページをレスポンシブ対応しました。', './contents/work_2021_01.html', 'img/entrance/entrance_rerec1.jpg'])
@@ -109,31 +111,36 @@ body#fadein
         +index_card(['2020/4/10', 'モノトーンランドスケープ Streaming Edit ストリーミング配信開始', '「モノトーンランドスケープ EP」がApple Musicなどで配信されてます。Conca版と同じ仕様。', './contents/work_2020_01.html', 'img/entrance/entrance_monotonelandscape.jpg'])
   
     //- footer
-    div.ui.inverted.vertical.footer.segment
+
+    div.ui.vertical.segment.inverted
       div.ui.container
-        div.ui.stackable.inverted.divided.equal.height.stackable.grid
-          div.center.aligned.column
-            h2.ui.header
-              img(src="./favicon.ico" alt="favicon" width="30px")
-              div.content あすのみ asnomi
-            div.ui.content
-              div.description 淡く繊細な終末世界を描く、作曲する絵描き。
-                p ふわふわした淡いキャラクター・涼し気な孤独感を身に纏うイラストと情景豊かな楽曲による唯一無二のグルーブ感を演出します。
-                a(href="../discography.html").item Discography
-                p 依頼はメールか各SNSから
-            div.ui.relaxed.divided.list
-              div.item
-                a(href="http://twitter.com/xm_igra3" target="_blank") Twitter
-              div.item
-                a(href="https://note.com/asnomi" target="_blank") Note
-              div.item
-                a(href="https://www.pixiv.net/users/1591078" target="_blank") Pixiv
-              div.item
-                a(href="https://soundcloud.com/xm_igr" target="_blank") SoundCloud
-              div.item
-                a(href="https://www.youtube.com/channel/UCdLmvCWCcVCvQcjZ9hBX5VQ" target="_blank") Youtube
-              div.item
-                a(href="https://xm-igr.tumblr.com/" target="_blank") Tumblr
+        div.ui.stackable.divided.equal.height.stackable.grid
+          div.middle.aligned.three.column.row
+            div.column
+              div.tiny.image
+                img(src="./favicon.ico" alt="favicon" width="30px")
+              h5 あすのみ
+              p 作曲する絵描き。
+            div.column
+              p
+                | ふわふわした淡いキャラクター・涼し気な孤独感を身に纏うイラスト、情景豊かな楽曲による唯一無二のグルーブ感を演出します。
+                br
+                | 依頼はメールか各SNSから
+            div.column
+              div.extra
+                a(href="http://twitter.com/xm_igra3" target="_blank").ui.label
+                  i.twitter.icon Twitter
+                a(href="https://www.pixiv.net/users/1591078" target="_blank").ui.label Pixiv
+                a(href="https://note.com/asnomi" target="_blank").ui.label Note
+                a(href="https://soundcloud.com/xm_igr" target="_blank").ui.label
+                  i.soundcloud.icon SoundCloud
+                a(href="https://www.youtube.com/channel/UCdLmvCWCcVCvQcjZ9hBX5VQ" target="_blank").ui.label
+                  i.youtube.icon Youtube
+                a(href="https://xm-igr.tumblr.com/" target="_blank").ui.label
+                  i.tumblr.icon Tumblr
+  
+  div.ui.vertical.footer.segment.inverted
       div.ui.container
         //- nav
         include ./include/footer.pug
+
