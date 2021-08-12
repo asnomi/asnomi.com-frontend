@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## include
-. ./devenv
+. ./env
 
 cd ${ROOTDIR}
 
