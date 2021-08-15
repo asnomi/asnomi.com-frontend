@@ -1,0 +1,111 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'asnomi rakugaki book 2017(kancolle)';
+- var ogpurl = '../../img/jacket/kancolle_rakugaki.jpg';
+- var mainimage = '../../img/jacket/kancolle_rakugaki.jpg';
+- var releasedate = '2017/8/11 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span ダブルスクエアレイアウトを基調とした陽炎型姉妹のフルカラーイラスト本です
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span 収録作品
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. リマインド
+                  div.item
+                    div.content
+                      div.header 2. 非現実的鎮守府ライフ
+                  div.item
+                    div.content
+                      div.header 3. 海が割れた日
+                  div.item
+                    div.content
+                      div.header 4. CatchyLandscape 2017 @じゅーろっく!!
+                  div.item
+                    div.content
+                      div.header 5. 廃墟探検
+                  div.item
+                    div.content
+                      div.header 6. Rockn Roll Deadline 2017
+                  div.item
+                    div.content
+                      div.header 7. 電車に揺られて
+                  div.item
+                    div.content
+                      div.header 8. 小さな小さな夏祭り
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                a(href="../../img/sample/c92_1.jpg" data-fancybox data-caption="sample1" rel="c92")
+                  img(src="../src/c92_1.jpg" alt="2"  width="80" class="img-fluid")
+                a(href="../../img/sample/c92_2.jpg" data-fancybox data-caption="sample2" rel="c92")
+                  img(src="../../img/sample/c92_2.jpg" alt="3"  width="80" class="img-fluid")
+                a(href="../../img/sample/c92_3.jpg" data-fancybox data-caption="sample3" rel="c92")
+                  img(src="../../img/sample/c92_3.jpg" alt="4"  width="80" class="img-fluid")
+                a(href="../../img/sample/c92_4.jpg" data-fancybox data-caption="sample4" rel="c92")
+                  img(src="../../img/sample/c92_4.jpg" alt="5"  width="80" class="img-fluid")
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 500円
+                h5 製品仕様
+                p B5フルカラー、12p
+                h5 頒布イベント
+                a(href="http://www.comiket.co.jp/" target="_blank") コミックマーケット92 2日目にて頒布
+                h5 委託先ショップ
+                p 現在委託しておりません。お問合せください。
+                h5 購入
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug

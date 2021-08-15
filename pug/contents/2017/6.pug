@@ -12,13 +12,11 @@
 include ../../include/var.pug
 
 //- local var
-- var title = 'Reloaded Remastered';
-- var ogpurl = 'https://s3-ap-northeast-1.amazonaws.com/dev.asnomi.com/img/jacket/reloaded_remaster.jpg';
-- var mainimage = 'https://s3-ap-northeast-1.amazonaws.com/dev.asnomi.com/img/jacket/reloaded_remaster.jpg';
-- var releasedate = '2020/11/10 Release';
+- var title = 'Reloaded EP';
+- var ogpurl = '../../img/jacket/reloaded.jpg';
+- var mainimage = '../../img/jacket/reloaded.jpg';
+- var releasedate = '2017/11/18 Release';
 - var event = '#';
-- var eventtext = 'イベント頒布なし';
-- var specification = 'ituensやspotifyなど各社でストリーミング配信（規格や値段は配信サイトによる）';
 
 //- functions
 
@@ -42,8 +40,7 @@ body#fadein
               div.meta
                 span #{releasedate}
               div.description
-                span 「ねぇ、誰が作る未来なの？」
-                |  2017年に頒布した「Reloaded」のリマスターエディションがサイレントリリース！
+                span APOLLO 第7回で突発リリースしたフルボーカルEP。asnomi studioの作品のイメソンになっております
         div.ui.divider
         div.ui.items
           div.item
@@ -72,11 +69,13 @@ body#fadein
                 span Information
               div.description
                 h5 価格
-                p 配信サイトによります。ストリーミング配信サイトの場合は無料です。
+                p 300円(APOLLO頒布時)
                 h5 製品仕様
-                p mp3/wav ※配信サイトによります。
+                p mp3
                 h5 頒布イベント
-                p イベント頒布無し
+                a(href="https://booth.pm/apollo/" target="_blank") APOLLO第7回 にて頒布
+                h5 委託ショップ
+                p 下記ストリーミング配信をご利用ください
                 h5 購入
                 div(tabindex="0").ui.blue.ertical.animated.button
                   div.hidden.content

@@ -12,11 +12,13 @@
 include ../../include/var.pug
 
 //- local var
-- var title = 'アリスのあしあと Archive2; モノトーンランドスケープ';
-- var ogpurl = '../../img/jacket/alice_footstep2.jpg';
-- var mainimage = '../../img/jacket/alice_footstep2.jpg';
-- var releasedate = '2019/10/2 Release';
-- var event = m3url;
+- var title = 'Closing me.';
+- var ogpurl = '../../img/jacket/closing_me.jpg';
+- var mainimage = '../../img/jacket/closing_me.jpg';
+- var subtext = '東北産バニラ麺 合同誌第3弾。';
+- var guidetext = '2018年は「変化 予兆 終幕」がテーマの変わりたい/変わってしまった人物の短編集。';
+- var releasedate = '2018/11/25 Release';
+- var event = comitiaurl;
 
 //- functions
 
@@ -40,31 +42,28 @@ body#fadein
               div.meta
                 span #{releasedate}
               div.description
-                span 「願っているこの先の色彩を。」
-                |  イラストと楽曲で表現する退廃的世界観「アリスのあしあと」第2部1章。
+                span 東北産バニラ麺 合同誌第3弾。
+                |  2018年は「変化 予兆 終幕」がテーマの変わりたい/変わってしまった人物の短編集
         div.ui.divider
         div.ui.items
           div.item
             div.content
               div.header
-                span TrackList
+                span 収録作品
               div.description
                 div.ui.relaxed.divided.list
                   div.item
                     div.content
-                      div.header 1. 見えない。
+                      div.header if('想い'!=
+                      div.description しゅう鮭
                   div.item
                     div.content
-                      div.header 2. Parallel World
+                      div.header 2. 今日の一言
+                      div.description ねこころ
                   div.item
                     div.content
-                      div.header 3. 雨底
-                  div.item
-                    div.content
-                      div.header 4. モノトーンランドスケープ
-                  div.item
-                    div.content
-                      div.header 5. ハローハロー
+                      div.header 3. Hack me.
+                      div.description あすのみ
         div.ui.divider
       div.column
         div.ui.items
@@ -73,7 +72,12 @@ body#fadein
               div.header
                 span Sample
               div.description
-                iframe(width="560" height="315" src="https://www.youtube.com/embed/kHz0OL8RRcY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                a(href="../../img/sample/im_b17_02.jpg" data-fancybox data-caption="tia126")
+                  img(src="../../img/sample/im_b17_02.jpg" alt="2"  width="130")
+                a(href="../img/sample/im_b17_03.jpg" data-fancybox data-caption="tia126")
+                  img(src="../../img/sample/im_b17_03.jpg" alt="3"  width="130")
+                a(href="../img/sample/im_b17_04.jpg" data-fancybox data-caption="tia126")
+                  img(src="../../img/sample/im_b17_04.jpg" alt="4"  width="130")
       div.column
         div.ui.items
           div.item
@@ -82,19 +86,14 @@ body#fadein
                 span Information
               div.description
                 h5 価格
-                p 1000円
+                p 500円。
                 h5 製品仕様
-                p B5変形（スクエア）フルカラー、28p、1000円、イメージソング5曲
+                p B5、32p
                 h5 頒布イベント
-                a(href=event) M3
+                a(href=event target="_blank") コミティア126
                 h5 委託先ショップ
-                p 現在委託しておりません。下記ストリーミング配信をご利用頂くか、お問合せください。
+                p 本は現在委託しておりません、お問合せください。
                 h5 購入
-                div(tabindex="0").ui.blue.ertical.animated.button
-                  div.hidden.content
-                    a(href="https://linkco.re/73aYmfFR") 配信先
-                  div.visible.content
-                    i.shop.icon
         div.ui.divider
 
   //- footer

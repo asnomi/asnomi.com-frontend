@@ -1,0 +1,116 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'ある日の気まぐれ暗示学';
+- var ogpurl = '../../img/jacket/kimagure.jpg';
+- var mainimage = '../../img/jacket/kimagure.jpg';
+- var releasedate = '2017-11-23 Release';
+- var event = comitiaurl;
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 東北産バニラ麺 合同誌第2弾。
+                |  2017年は「忘れ物」がテーマの短編集です。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span 収録作品
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. ラフイラスト
+                      div.description ねこころ
+                  div.item
+                    div.content
+                      div.header 2. あたしの税込540円
+                      div.description あすのみ
+                  div.item
+                    div.content
+                      div.header 3. 忘れ傘
+                      div.description ねこころ
+                  div.item
+                    div.content
+                      div.header 4. アニィフリカは今日も雨
+                      div.description らばる
+                  div.item
+                    div.content
+                      div.header 5. 都合のいい場所
+                      div.description しゅう鮭
+                  div.item
+                    div.content
+                      div.header 6. 没イラスト
+                      div.description あすのみ
+                  div.item
+                    div.content
+                      div.header 7. あとがきコーナー
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                a(href="../..img/sample/tia122_1.jpg" data-fancybox data-caption="tia122")
+                  img(src="../../img/sample/tia122_1.jpg" alt="1"  width="130")
+                a(href="../../img/sample/tia122_2.jpg" data-fancybox data-caption="tia122")
+                  img(src="../../img/sample/tia122_2.jpg" alt="2"  width="130")
+                a(href="../../img/sample/tia122_3.jpg" data-fancybox data-caption="tia122")
+                  img(src="../../img/sample/tia122_3.jpg" alt="3"  width="130")
+                a(href="../../img/sample/tia122_4.jpg" data-fancybox data-caption="tia122")
+                  img(src="../../img/sample/tia122_4.jpg" alt="3"  width="130")
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 500円。
+                h5 製品仕様
+                p BB5、44p
+                h5 頒布イベント
+                a(href=event target="_blank") コミティア122
+                h5 委託先ショップ
+                p 本は現在委託しておりません、お問合せください。
+                h5 購入
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug
+

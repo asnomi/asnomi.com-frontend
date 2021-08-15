@@ -12,11 +12,11 @@
 include ../../include/var.pug
 
 //- local var
-- var title = '淡彩色のワンダーランド Remastered';
-- var ogpurl = '../../img/jacket/wonderland_remaster.jpg';
-- var mainimage = '../../img/jacket/wonderland_remaster.jpg';
-- var releasedate = '2020/7/12 Release';
-- var event = '#';
+- var title = '淡彩色のワンダーランド';
+- var ogpurl = '../../img/jacket/wonderland.jpg';
+- var mainimage = '../../img/jacket/wonderland.jpg';
+- var releasedate = '2017/8/20 Release';
+- var event = comitiaurl;
 
 //- functions
 
@@ -40,8 +40,8 @@ body#fadein
               div.meta
                 span #{releasedate}
               div.description
-                span 「今までのお話をもう一度聞かせて。」
-                |  2017年に頒布した「淡彩色のワンダーランド」がリマスターされて帰ってきました。Apple Musicなどでストリーミング配信中
+                span 「真っ白な世界に、一人で立っている。
+                |  asnomi studioの軸になっている作品。初のフルボーカルアルバム
         div.ui.divider
         div.ui.items
           div.item
@@ -84,11 +84,13 @@ body#fadein
                 span Information
               div.description
                 h5 価格
-                p 配信サイトによります。ストリーミング配信サイトの場合は無料です。
+                p 800円(コミティア頒布時)
                 h5 製品仕様
-                p mp3/wav ※配信サイトによります。
+                p 紙ジャケット、手焼きCD
                 h5 頒布イベント
-                p イベント頒布無し
+                a(href=event target="_blank") コミティア121
+                h5 委託ショップ
+                p ストリーミング配信をご利用ください
                 h5 購入
                 div(tabindex="0").ui.blue.ertical.animated.button
                   div.hidden.content

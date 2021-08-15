@@ -1,0 +1,73 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'Dropout Reload';
+- var ogpurl = '../../img/jacket/dropout_reload.jpg';
+- var mainimage = '../../img/jacket/dropout_reload.jpg';
+- var releasedate = '2017/8/20 Release';
+- var event = comitiaurl;
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span あすのみのうちの子ワールド、まさかの小説化。
+                | ken1さん執筆でリビーちゃん達の活躍が綴られる。少し硬派な硝煙と女の子が好きな人にオススメ
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                a(href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=6441250" target="_blank") Pixiv
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 800円
+                h5 製品仕様
+                p 小説
+                h5 頒布イベント
+                a(href=event target="_blank") コミティア121
+                h5 委託先ショップ
+                p 委託無し
+                h5 購入
+                p お問合せください
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug
