@@ -9,7 +9,7 @@
   - footer.pug
 
 //- global var
-include ./include/var.pug
+include ../../include/var.pug
 
 //- local var
 - var title = 'モノトーンランドスケープ EP';
@@ -17,8 +17,6 @@ include ./include/var.pug
 - var mainimage = 'https://s3-ap-northeast-1.amazonaws.com/dev.asnomi.com/img/jacket/monotone_landscape.jpg';
 - var releasedate = '2020/4/10 Release';
 - var event = m3url;
-- var eventtext = 'M3にて頒布';
-- var specification = 'ituensやspotifyなど各社でストリーミング配信（規格や値段は配信サイトによる）';
 
 //- functions
 
@@ -26,13 +24,8 @@ include ./include/var.pug
 
 
 //- header
-include ./include/head.pug
+include ../../include/head.pug
 body#fadein
-  div.entrance_top
-    div.ui.vertical.masthead.center.aligned.segment
-      div.ui.container
-
-
   div.ui.two.column.stackable.grid
     div.middle.aligned.two.column.row
       div.column
@@ -92,8 +85,10 @@ body#fadein
                 h5 価格
                 p 配信サイトによります。ストリーミング配信サイトの場合は無料です。
                 p Conca版は500円です。
-                h5 配信形式
+                h5 製品仕様
                 p mp3/wav ※配信サイトによります。
+                h5 頒布イベント
+                a(href=event) M3
                 h5 委託先ショップ
                 p 本、Concaともに現在委託しておりません。下記ストリーミング配信をご利用ください。
                 h5 購入
@@ -103,9 +98,7 @@ body#fadein
                   div.visible.content
                     i.shop.icon
         div.ui.divider
+
   //- footer
-  div.ui.inverted.vertical.footer.segment
-    div.ui.container
-      div.column
-        include ./include/footer.pug
+  include ../../include/footer.pug
 
