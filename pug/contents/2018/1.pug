@@ -1,0 +1,122 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'アリスのあしあと Archive1';
+- var ogpurl = '../../img/jacket/alice_footstep.jpg';
+- var mainimage = '../../img/jacket/alice_footstep.jpg';
+- var releasedate = '2018/5/5 Release';
+- var event = comitiaurl;
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 「アリスのあしあと」は主人公のアリスが描く日記です。2017年12月から2018年5月までに渡って作った話のまとめ本です。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span TrackList
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. アリスのあしあと
+                  div.item
+                    div.content
+                      div.header 2. まっしろしろいおとぎ話 feat.GUMI
+                  div.item
+                    div.content
+                      div.header 3. yukueshirazu feat.GUMI
+                  div.item
+                    div.content
+                      div.header 4. 錆びた鉛と廃墟の世界 
+                  div.item
+                    div.content
+                      div.header 5. 汚れたシャツと、綺麗な空と、
+                  div.item
+                    div.content
+                      div.header 6. ゴーストビジョン
+                  div.item
+                    div.content
+                      div.header 7. 浮遊感
+                  div.item
+                    div.content
+                      div.header 8. アリスとアリス feat.GUMI
+                  div.item
+                    div.content
+                      div.header 9. 目覚めの歌 feat.GUMI
+                  div.item
+                    div.content
+                      div.header 10. (記憶|記録) feat.GUMI
+                  div.item
+                    div.content
+                      div.header 11. WONDERLAND feat.GUMI
+                      div.description 淡彩色のワンダーランド より再録
+                  div.item
+                    div.content
+                      div.header 12. little_step
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                a(href="https://twitter.com/i/moments/940184714744250369" target="_blank") Twitter モーメント
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 800円
+                h5 製品仕様
+                p A5、フルカラー、32p、イメージソング12曲(MP3) 
+                h5 頒布イベント
+                a(href=event target="_blank") コミティア124
+                h5 委託先ショップ
+                p 本は現在委託しておりません、お問合せください。楽曲は無料配布中。
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://icenomi.booth.pm/items/834621") 楽曲無料
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug

@@ -1,0 +1,88 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'Reloaded EP';
+- var ogpurl = '../../img/jacket/reloaded.jpg';
+- var mainimage = '../../img/jacket/reloaded.jpg';
+- var releasedate = '2017/11/18 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span APOLLO 第7回で突発リリースしたフルボーカルEP。asnomi studioの作品のイメソンになっております
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span TrackList
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. Reloaded
+                      div.description 小説「Dropout Reloaded」テーマソング
+                  div.item
+                    div.content
+                      div.header 2. Dropout After
+                  div.item
+                    div.content
+                      div.header 3. Photograph Remind
+        div.ui.divider
+      div.column
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 300円(APOLLO頒布時)
+                h5 製品仕様
+                p mp3
+                h5 頒布イベント
+                a(href="https://booth.pm/apollo/" target="_blank") APOLLO第7回 にて頒布
+                h5 委託ショップ
+                p 下記ストリーミング配信をご利用ください
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://linkco.re/G52XV4xZ") 配信先
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug

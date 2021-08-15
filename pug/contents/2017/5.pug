@@ -1,0 +1,103 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = '淡彩色のワンダーランド';
+- var ogpurl = '../../img/jacket/wonderland.jpg';
+- var mainimage = '../../img/jacket/wonderland.jpg';
+- var releasedate = '2017/8/20 Release';
+- var event = comitiaurl;
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 「真っ白な世界に、一人で立っている。
+                |  asnomi studioの軸になっている作品。初のフルボーカルアルバム
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span TrackList
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. introduction
+                  div.item
+                    div.content
+                      div.header 2. 新世界
+                  div.item
+                    div.content
+                      div.header 3. 汚れたわたしと悪趣味なあなた
+                  div.item
+                    div.content
+                      div.header 4. WONDERLAND
+                  div.item
+                    div.content
+                      div.header 5. セルフィッシュガール
+                  div.item
+                    div.content
+                      div.header 6. サイコメトリスト
+                  div.item
+                    div.content
+                      div.header 7. 泡
+                  div.item
+                    div.content
+                      div.header 8. あの日の星空  
+        div.ui.divider
+      div.column
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 800円(コミティア頒布時)
+                h5 製品仕様
+                p 紙ジャケット、手焼きCD
+                h5 頒布イベント
+                a(href=event target="_blank") コミティア121
+                h5 委託ショップ
+                p ストリーミング配信をご利用ください
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://linkco.re/G52XV4xZ") 配信先
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug

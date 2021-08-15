@@ -1,0 +1,64 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'uchinoko_world rakugaki book 1.5';
+- var ogpurl = '../../img/jacket/uchinoko_rakugaki.jpg';
+- var mainimage = '../../img/jacket/uchinoko_rakugaki.jpg';
+- var releasedate = '2018/5/5 Release';
+- var event = comitiaurl;
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 設定とか書いたコピ本。淡彩世界のルポルタージュで連載してる内容のベースライン。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 100円
+                h5 製品仕様
+                p コピー本
+                h5 頒布イベント
+                a(href=event target="_blank") コミティア121
+                h5 委託先ショップ
+                p 委託無し
+                h5 購入
+                p 在庫なし
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug

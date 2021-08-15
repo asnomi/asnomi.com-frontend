@@ -1,0 +1,104 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'Hack me. EP';
+- var ogpurl = '../../asnomi.com/img/jacket/hack_me.jpg';
+- var mainimage = '../../asnomi.com/img/jacket/hack_me.jpg';
+- var releasedate = '2018/12 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 通算11枚目となる楽曲アルバムは「変化」「特別」がテーマ。合同誌「Closing me.」に収録した短編「Hack me.」とリンクする新曲と旧譜からセルフアレンジ楽曲1曲を収録。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span TrackList
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. Hack me. feat.GUMI
+                      div.description 合同誌「Closing me.」イメージソング
+                  div.item
+                    div.content
+                      div.header 2. WorldEndLivePair feat.GUMI
+                      div.description 合同誌「Closing me.」イメージソング
+                  div.item
+                    div.content
+                      div.header 3. 新世界(2018) feat.GUMI
+                      div.description 淡彩色のワンダーランド より再録
+                  div.item
+                    div.content
+                      div.header 4. Hack me. - off vocal
+                  div.item
+                    div.content
+                      div.header 5. WorldEndLivePair - off vocal
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+        iframe(width="560" height="315" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/550531290&amp;color=%2361c1c5&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        iframe(width="560" height="315" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/550532586&amp;color=%2361c1c5&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 500円。
+                h5 製品仕様
+                p ジャケット/ブックレット 画像データ(jpg)x5、音源データ(5曲)の収録、500円。ボーカルはGUMI、新曲はSoundCloudでフル公開しています。
+                h5 頒布イベント
+                p イベント頒布無し
+                h5 委託先ショップ
+                p Booth
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://icenomi.booth.pm/items/1151522" target="_blank") 配信先
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug
