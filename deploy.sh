@@ -15,12 +15,16 @@ echo "===================================="
 #aws s3 rm s3://${BUCKET}/style/ ${OPTION}
 #echo "Cleanup Finished"
 
+echo "style"
+mv style/* ../docroot/style/
+
 echo "Pug Compile"
 cd pug
 pug *.pug
-mv work*.html ../docroot/contents/   
+find contents/ -iname "*pug" |xargs -I {} pug {}
 mv discography.html ../docroot/
 mv index.html ../docroot/
+find contents/ -iname "*html" |xargs -I {} mv {} ../docroot/{}
 
 echo "Compile Finished"
 
