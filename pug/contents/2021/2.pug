@@ -1,0 +1,88 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = '秋空 feat.GUMI - single';
+- var ogpurl = '../../img/jacket/akizora.jpg';
+- var mainimage = '../../img/jacket/akizora.jpg';
+- var releasedate = '2021/12/4 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 秋の空はひどく冷たいな
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span TrackList
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. 秋空 feat.GUMI
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                .
+                  <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1158524119&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/asnomi_studio" title="asnomi studio" target="_blank" style="color: #cccccc; text-decoration: none;">asnomi studio</a> · <a href="https://soundcloud.com/asnomi_studio/akizora" title="秋空 feat. GUMI" target="_blank" style="color: #cccccc; text-decoration: none;">秋空 feat. GUMI</a></div>
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 配信サイトによります。ストリーミング配信サイトの場合は無料です。
+                h5 製品仕様
+                p mp3/wav ※配信サイトによります。
+                h5 頒布イベント
+                p イベント頒布無し
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://linkco.re/gNdb3rVZ") 配信先
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug
+

@@ -1,0 +1,105 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'ふたりぼっちの夜に';
+- var ogpurl = '../../img/jacket/hutaribocchi_no_yoruni.jpg';
+- var mainimage = '../../img/jacket/hutaribocchi_no_yoruni.jpg';
+- var releasedate = '2015/12/30 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 今までよりちょっとだけ激情的。「もう疲れたでしょ？返事はいらないよ」
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span TrackList
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. RE
+                  div.item
+                    div.content
+                      div.header 2. Fuzzy and fuzzy feat.ゲン猫
+                  div.item
+                    div.content
+                      div.header 3. ガラクタ feat.ゲン猫
+                  div.item
+                    div.content
+                      div.header 4. K_DD
+                  div.item
+                    div.content
+                      div.header 5. 海が割れた日 feat.ゲン猫
+                  div.item
+                    div.content
+                      div.header 6. ふたりぼっちの夜に
+
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                .
+                  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/239084731&color=%2340403a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/asnomi_studio" title="asnomi studio" target="_blank" style="color: #cccccc; text-decoration: none;">asnomi studio</a> · <a href="https://soundcloud.com/asnomi_studio/c89-xfd" title="【C89】新譜 ふたりぼっちの夜に XFD" target="_blank" style="color: #cccccc; text-decoration: none;">【C89】新譜 ふたりぼっちの夜に XFD</a></div>
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 300円
+                h5 製品仕様
+                p 手焼きCD 
+                h5 頒布イベント
+                a(href="http://www.comiket.co.jp/" target="_blank") コミックマーケット89二日目Q-33b頒布
+                h5 委託先ショップ
+                p BoothにてDL頒布中
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://icenomi.booth.pm/items/176231") Go
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug

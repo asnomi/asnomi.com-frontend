@@ -1,0 +1,114 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'RE(艦これ総集編)';
+- var ogpurl = '../../img/jacket/re.png';
+- var mainimage = '../../img/sample/re_1.jpg';
+- var releasedate = '2015/12/30 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 2013～2015年に出した本に書き下ろしを加えた総集編です。数年後に再開した陽炎型姉妹達は何を思い出すのか。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span 収録内容
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. #RE
+                  div.item
+                    div.content
+                      div.header 1. ふたりぼっち
+                  div.item
+                    div.content
+                      div.header 2. 暗い雰囲気は苦手ですっ
+                  div.item
+                    div.content
+                      div.header 3. 駆逐艦娘かわいい
+                  div.item
+                    div.content
+                      div.header 4. Selfish girls in the Fuzzy room
+                  div.item
+                    div.content
+                      div.header 5. 舞風ちゃんと赤城さん
+                  div.item
+                    div.content
+                      div.header 6. ヒステリック・ラストダンス
+                  div.item
+                    div.content
+                      div.header 7. RE
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                a(href="../../img/sample/re_2.jpg" data-fancybox data-caption="re")
+                  img(src="../../img/sample/re_2.jpg" alt="1"  width="130")
+                a(href="../../img/sample/re_3.jpg" data-fancybox data-caption="re")
+                  img(src="../../img/sample/re_3.jpg" alt="2"  width="130")
+                a(href="../../img/sample/re_4.jpg" data-fancybox data-caption="re")
+                  img(src="../../img/sample/re_4.jpg" alt="3"  width="130")
+                a(href="../../img/sample/re_5.jpg" data-fancybox data-caption="re")
+                  img(src="../../img/sample/re_5.jpg" alt="4"  width="130")
+                a(href="../../img/sample/re_6.jpg" data-fancybox data-caption="re")
+                  img(src="../../img/sample/re_6.jpg" alt="3"  width="130")
+                a(href="../../img/sample/re_7.jpg" data-fancybox data-caption="re")
+                  img(src="../../img/sample/re_7.jpg" alt="4"  width="130")
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 800円
+                h5 製品仕様
+                p A5、136p
+                h5 頒布イベント
+                a(href="http://www.comiket.co.jp/" target="_blank") コミックマーケット89 二日目Q-33b頒布
+                h5 委託先ショップ
+                p なし
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug
