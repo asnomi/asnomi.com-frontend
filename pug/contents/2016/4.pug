@@ -1,0 +1,103 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'にじみ出ろ。';
+- var ogpurl = '../../img/jacket/nijimidero.jpg';
+- var mainimage = '../../img/sample/tia118_top.jpg';
+- var releasedate = '2016/10/23 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 各々が思い描く、変わった人と繰り広げる非日常短編集
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span 収録作品
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. 変わった人
+                      div.description しゅう鮭
+                  div.item
+                    div.content
+                      div.header 2. 変わった人の話～Rem In A Dream
+                      div.description ねこころ
+                  div.item
+                    div.content
+                      div.header 3. サイコメトリスト
+                      div.description あすのみ
+                  div.item
+                    div.content
+                      div.header 4. 町へ行こう
+                      div.description らばる
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                a(href="../../img/sample/nijimidero_1.jpg" data-fancybox data-caption="tia118")
+                  img(src="../../img/sample/nijimidero_1.jpg" alt="1"  width="130")
+                a(href="../../img/sample/nijimidero_2.jpg" data-fancybox data-caption="tia118")
+                  img(src="../../img/sample/nijimidero_2.jpg" alt="2"  width="130")
+                a(href="../../img/sample/nijimidero_3.jpg" data-fancybox data-caption="tia118")
+                  img(src="../../img/sample/nijimidero_3.jpg" alt="3"  width="130")
+                a(href="../../img/sample/nijimidero_4.jpg" data-fancybox data-caption="tia118")
+                  img(src="../../img/sample/nijimidero_4.jpg" alt="4"  width="130")
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 500円。
+                h5 製品仕様
+                p B5、56p
+                h5 頒布イベント
+                a(href=event target="_blank") コミティア118
+                h5 委託先ショップ
+                p 本は現在委託しておりません、お問合せください。
+                h5 購入
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug

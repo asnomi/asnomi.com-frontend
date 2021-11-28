@@ -1,0 +1,153 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'CATCHY LANDSCAPE';
+- var ogpurl = '../../img/jacket/catchy_landscape.jpg';
+- var mainimage = '../../img/sample/catchy_landscape_1.jpg';
+- var releasedate = '2016/08/13 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 16駆がガールズバンドに！？という妄想が一冊の本と楽曲になりました。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span 本編
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. スカート禁止自治区
+                  div.item
+                    div.content
+                      div.header 2. じゅーろっく and more
+                  div.item
+                    div.content
+                      div.header 3. 天津風と真っ赤なギター
+                  div.item
+                    div.content
+                      div.header 4. 事の発端
+                  div.item
+                    div.content
+                      div.header 5. 雪風崇拝
+                  div.item
+                    div.content
+                      div.header 6. 梅雨明けときつ
+                  div.item
+                    div.content
+                      div.header 7. 英国式紅茶零さないゲーム
+                  div.item
+                    div.content
+                      div.header 8. Tokitsukaze
+                  div.item
+                    div.content
+                      div.header 9. candy days
+                  div.item
+                    div.content
+                      div.header 10. アメノオト
+                  div.item
+                    div.content
+                      div.header 11. キャッチーランドスケープ
+                  div.item
+                    div.content
+                      div.header 12. 16駆
+                  div.item
+                    div.content
+                      div.header 13. 17駆
+                  div.item
+                    div.content
+                      div.header 14. 4駆
+                  div.item
+                    div.content
+                      div.header 15. 純情乙女のわっち
+                  div.item
+                    div.content
+                      div.header 16. unreal
+              div.header
+                span おまけ楽曲
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. candy days
+                  div.item
+                    div.content
+                      div.header 2. じゃんぴんじゃんぴん
+                  div.item
+                    div.content
+                      div.header 3. Catchy Landscape
+                  div.item
+                    div.content
+                      div.header 4. ヒトリノワールド
+                  div.item
+                    div.content
+                      div.header 5. じゅーろっく！！(2016 ReRec)
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                .
+                  <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/277447062&color=%232fe9d7&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/asnomi_studio" title="asnomi studio" target="_blank" style="color: #cccccc; text-decoration: none;">asnomi studio</a> · <a href="https://soundcloud.com/asnomi_studio/c90catchy-landscape-xfd" title="【C90】Catchy Landscape Xfd" target="_blank" style="color: #cccccc; text-decoration: none;">【C90】Catchy Landscape Xfd</a></div>
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 500円
+                h5 製品仕様
+                p B5フルカラー、20p、 おまけ5曲(mp3データ)
+                h5 頒布イベント
+                a(href="http://www.comiket.co.jp/" target="_blank") コミックマーケット90 2日目東F-26aにて頒布
+                h5 委託先ショップ
+                p BoothにてDL頒布中
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://icenomi.booth.pm/items/556698") Go
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug

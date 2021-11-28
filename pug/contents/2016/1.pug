@@ -1,0 +1,114 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = 'Dropout After';
+- var ogpurl = '../../img/jacket/dropout_after.jpg';
+- var mainimage = '../../img/sample/tia_sample_1.jpg';
+- var releasedate = '2016/05/05 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span ほんの少しだけ未来、世界の4割は廃墟になりました。初のオリジナルフルカラーイラスト本。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span 収録イラスト
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. ナンセンスプレイヤー
+                  div.item
+                    div.content
+                      div.header 2. 錆びた鉛と廃墟の世界
+                  div.item
+                    div.content
+                      div.header 3. Dropout
+                  div.item
+                    div.content
+                      div.header 4. ゴーストビジョン
+                  div.item
+                    div.content
+                      div.header 5. overwrites
+                  div.item
+                    div.content
+                      div.header 6. grasp
+                  div.item
+                    div.content
+                      div.header 7. 狭い狭い世界の片隅
+                  div.item
+                    div.content
+                      div.header 8. ガラクタ
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                a(href="../../img/sample/tia_sample_2.jpg" data-fancybox data-caption="tia116")
+                  img(src="../../img/sample/tia_sample_2.jpg" alt="1"  width="130")
+                a(href="../../img/sample/tia_sample_3.jpg" data-fancybox data-caption="tia116")
+                  img(src="../../img/sample/tia_sample_3.jpg" alt="2"  width="130")
+                a(href="../../img/sample/tia_sample_4.jpg" data-fancybox data-caption="tia116")
+                  img(src="../../img/sample/tia_sample_4.jpg" alt="3"  width="130")
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 500円
+                h5 製品仕様
+                p B5フルカラー、16P
+                h5 頒布イベント
+                a(href=comitiaurl target="_blank") コミティア116にて頒布
+                h5 委託先ショップ
+                p BoothにてDL頒布中
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://icenomi.booth.pm/items/557886") Go
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug
