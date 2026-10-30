@@ -1,0 +1,117 @@
+//- --------------------------------------------------------------------------------------
+//- discography
+//- Coded by Pug
+
+//- Include modules
+  - var.pug
+  - head.pug
+  - nav.pug
+  - footer.pug
+
+//- global var
+include ../../include/var.pug
+
+//- local var
+- var title = '群青色のコヒーレンス';
+- var ogpurl = '../../img/jacket/coherence_of_ultramarine.jpg';
+- var mainimage = '../../img/jacket/coherence_of_ultramarine.jpg';
+- var releasedate = '2022/4/24 Release';
+- var event = '#';
+
+//- functions
+
+//- --------------------------------------------------------------------------------------
+
+
+//- header
+include ../../include/head.pug
+body#fadein
+  div.ui.two.column.stackable.grid
+    div.middle.aligned.two.column.row
+      div.column
+        div.segment
+          img(src=mainimage).ui.image.fluid
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span #{title}
+              div.meta
+                span #{releasedate}
+              div.description
+                span 創作活動10年目の年、世界観を最初から再考して描き出すREBOOTアルバム。
+        div.ui.divider
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span TrackList
+              div.description
+                div.ui.relaxed.divided.list
+                  div.item
+                    div.content
+                      div.header 1. 青い世界 (introduction)
+                  div.item
+                    div.content
+                      div.header 2. 光、滲んだ (Alternate Ver)
+                      div.description from 光、滲んだ feat. GUMI - Single
+                  div.item
+                    div.content
+                      div.header 3. Unsupported
+                  div.item
+                    div.content
+                      div.header 4. 雨の日の歌
+                  div.item
+                    div.content
+                      div.header 5. 夏空 
+                  div.item
+                    div.content
+                      div.header 6. hoshigari
+                  div.item
+                    div.content
+                      div.header 7. アムネジア
+                  div.item
+                    div.content
+                      div.header 8. ミッドナイトダイバー
+                  div.item
+                    div.content
+                      div.header 9. 秋空 (Alternate Ver)
+                      div.description from 秋空 feat. GUMI - Single
+                  div.item
+                    div.content
+                      div.header 10. unreal
+        div.ui.divider
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Sample
+              div.description
+                .
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/B-mNt93k-bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      div.column
+        div.ui.items
+          div.item
+            div.content
+              div.header
+                span Information
+              div.description
+                h5 価格
+                p 配信サイトによります。ストリーミング配信サイトの場合は無料です。
+                h5 製品仕様
+                p データ、Hi-Reso ※配信サイトによります。
+                h5 頒布イベント
+                p 2022/4/24 M3に合わせて頒布。ポストカード頒布します(3枚100円)
+                h5 購入
+                div(tabindex="0").ui.blue.ertical.animated.button
+                  div.hidden.content
+                    a(href="https://linkco.re/GPxd3Ca2") 配信先
+                  div.visible.content
+                    i.shop.icon
+        div.ui.divider
+
+  //- footer
+  include ../../include/footer.pug
+
